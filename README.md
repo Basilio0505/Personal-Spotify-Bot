@@ -7,7 +7,7 @@ for me to sort through.
 
 createPlaylist() will create a new playlist with name, desc, and public status set.
 
-checkPlaylist() will check the user music library and return the total amount of songs saved.
+checkLibrary() will check the user music library and return the total amount of songs saved.
 
 loadSongs() will read all the songs in the user music library and places them into a list
 after being randomized.
