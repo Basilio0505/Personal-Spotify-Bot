@@ -9,15 +9,12 @@ clientSecret = ""
 #Make sure to update this as it expires often
 clientToken = ""
 
-
-
-
+#The account to be accessed
 userID = "bigb_035"
+playlistID = ""
 
 # Validate this is up to date make sure to round up to the nearest 20 divisible
 current_count = 1240
-playlistID = "2djfv0TDULwc2OexoBcmRf"
-
 all_songs = []
 
 library_headers = {
@@ -81,7 +78,6 @@ def loadSongs():
     #print(len(all_songs))
 
 def addToPlaylist():
-    #NOT WORKING FIX 
     query = "https://api.spotify.com/v1/playlists/{}/tracks".format(playlistID)
     temp_list = []
     for i in all_songs:
