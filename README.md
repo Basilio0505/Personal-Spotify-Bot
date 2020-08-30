@@ -12,5 +12,5 @@ checkLibrary() will check the user music library and return the total amount of 
 loadSongs() will read all the songs in the user music library and places them into a list
 after being randomized.
 
-addToPlaylist will add the list of randomized songs into the newly created playlist in groups 
+addToPlaylist() will add the list of randomized songs into the newly created playlist in groups 
 of 20 since Spotify API only allows up to 20 songs per query.
