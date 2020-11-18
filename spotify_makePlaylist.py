@@ -92,11 +92,16 @@ def addToPlaylist():
                 headers = library_headers
             )
             temp_list = []
-        
-    #test_track = "spotify:track:3EUTBXsIqtgriy8mEFsU7P"
-    #request_data = json.dumps({"uris":[test_track]})#json.dumps(test_track)
-    #print(request_data)
-    #response = requests.post(query, data=request_data, headers=library_headers)
+    if(len(temp_list) % 20 != 0):
+        print(len(temp_list))
+        request_data = json.dumps({"uris":temp_list})
+        print(temp_list)
+        response = requests.post(
+            query,
+            data = request_data,
+            headers = library_headers
+        )
+        temp_list = []
     
 if __name__ == "__main__":
     #createPlaylist()
